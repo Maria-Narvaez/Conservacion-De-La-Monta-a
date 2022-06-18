@@ -76,6 +76,7 @@ section {
 }
 
 .header {
+    
     background: var(--bg);
     display: flex;
     align-items: center;
@@ -113,7 +114,7 @@ section {
 }
 
 .menuNav>img {
-    display: none;
+    display:flex;
 }
 
 .header .icons div {
@@ -132,6 +133,7 @@ section {
 }
 
 .header .search-form {
+    
     position: static;
     top: 115%;
     right: 7%;
@@ -146,6 +148,7 @@ section {
 
 .header .search-form.active {
     transform: scaleY(1);
+    
 }
 
 .header .search-form input {
@@ -174,7 +177,7 @@ section {
     right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: #fff;
+    background: rgb(8, 8, 8);
     padding: 0 1.5rem;
 }
 
@@ -463,7 +466,7 @@ section {
     padding-left: 2rem;
 }
 
-.contact .row form .inputBox input {
+.contact .row form .inputBox input  {
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
@@ -583,6 +586,8 @@ section {
 }
 
 
+
+
 /*ESTILOS SOBRE NOSOTROS*/
 
 
@@ -593,7 +598,15 @@ section {
     padding: 1%;
     background-color: #fff;
     color: black;
+    width: 90%;
 }
+
+
+
+
+
+
+
 
 
 /*Estilos titulo historia*/
@@ -603,17 +616,35 @@ section {
     color: white;
 }
 
-p {
-    color: black;
+.parrafo p {
+    color: rgb(5, 5, 5);
     font-size: 2rem;
+    
 }
+
+.contenedor .centrado p{
+    color: rgb(250, 248, 248);
+    font-size: 2rem;
+    font: italic 90%/90% serif;
+}
+
+
 
 
 /*Estilos parrafo equipo y fortalezas*/
 
 .equipo {
     margin: 5% 5% 2% 5%;
-    background: black;
+    
+}
+
+.clasimgs{
+    height: 70vh;
+}
+
+.aaaa{
+    height: 1000px;
+    max-height: 1000px;
 }
 
 
@@ -629,25 +660,22 @@ p {
 
 .tazitaCafe {
     background-color: #fff;
-    border: white solid 1px;
+    border: rgb(160, 31, 31) solid 1px;
     margin: 1% 5% 1% 5%;
     padding: 1%;
 }
 
 .subtitulos {
-    background-color: rgba(255, 255, 255, 0.699);
-    color: black;
+    background-color: #d3ad7f;
+    color: white;
     font-size: 2rem;
 }
 
 .par {
-    background-color: var(--black);
-    color: white;
+    color: black;
 }
 
-.todito {
-    background-color: var(--black);
-}
+
 
 /*ESTILOS DE VIDEO*/
 .video{
@@ -684,8 +712,9 @@ p {
     border-radius: 2px;
     border: 15px solid rgba(0, 0, 0, 0.5);
     text-shadow: 2px 2px 1px rgb(17, 15, 15);
-    font:italic 100%/200% serif;
+    
 }
+
 /*FRASE CON IMAGEN*/
 
 
@@ -715,9 +744,7 @@ p {
         position: static;
         top: 100%;
         right: -100%;
-        background: #fff;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
+     
     }
     .menuNav>img {
         display: inline-block;
@@ -726,7 +753,6 @@ p {
         right: 0;
     }
     .header .navbar a {
-        color: var(--black);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
@@ -747,10 +773,30 @@ p {
     .home .content p {
         font-size: 1.5rem;
     }
+
+    .contenedor p{
+        font-size: 35px;
+        width: 350px;
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
     }
+}
+
+@media (max-width:767px) {
+    
+
+    .imagencafee{
+        width: 100%;
+        text-align: center;
+    }
+  
+    .imagenhistoria{
+        width: 100%;
+        text-align: center;
+    }
+
 }
